@@ -1,12 +1,85 @@
 doctype html
 html
   head
-    title Tribute
+    title Khatia Buniatishvili
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name='description', content='Demo project')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='styles/main.css')
+  
   body
-    p Let the game begin!
-  script(type='text/javascript' src='js/main.js').
+
+    //- Header
+
+    header#header.flex__wrapper
+      nav
+        h1.header__title Khatia Buniatishvili
+          span.header__subtitle Pianist - Artist - Model
+        a.link(href='#') Home
+        a.link(href='#') About
+        a.link(href='#') Discography
+        a.link(href='#') Awards
+        a.link(href='#') Tour Dates
+        a.link(href='#') Contact
+
+    
+    //- About
+    section#about
+      h3.section__title About
+      p  Khatia Buniatishvili began studying piano under her mother at the age of three.[1] She gave her first concert with the Chamber Orchestra in Tbilisi at the age of six. From the age of ten she gave concerts in Europe, Ukraine, Armenia, Israel and the USA.[2] She studied with Michel Sogny at the Villa Schindler in Austria from 1999 to 2002. She graduated from the Tbilisi Central Music School, then entered the Tbilisi State Conservatory in 2004.[3] Buniatishvili, who has described the piano as a "symbol of musical solitude",[4] chose the piano over the violin despite her perfect pitch. She and her (older) sister Gvantsa learned the piano together and performed duets at home.[5] Buniatishvili has played with, among other orchestras, the Orchestre de Paris under Paavo Järvi, the Los Angeles Philharmonic, the Vienna Symphony Orchestra, the Orchestre National de France under Daniele Gatti and the Philharmonia Orchestra in London. She has also performed chamber music with musicians including Gidon Kremer and Renaud Capuçon.[6] In 2010 she received the Borletti-Buitoni Trust Award,[7] and was included in the BBC series New Generation Artists.[8] The Vienna Musikverein and Konzerthaus nominated her as Rising Star for the 2011–12 season, and in 2012 she was awarded Best Newcomer of the Year in the Echo Klassik awards.[9] 
+    hr
+
+    //- Discography  
+    section#discography.flex__wrapper
+      h3.section__title Discography
+      ul.flex__align
+        li 2011 - Franz Liszt[21] Solo Piano album (Sony Classical)
+        li 2012 - Chopin[22] with the Orchestre de Paris, conducted by Paavo Järvi (Sony Classical)
+        li 2014 - Motherland[23] Solo Piano album (Sony Classical)
+    hr
+
+    //- Awards
+    section#awards.flex__wrapper
+      h3.section__title Awards
+      ul.flex__align
+        li 12th Arthur Rubinstein International Piano Master Competition (2008): Third Prize winner along with a Special Prize “Best Performer of a Chopin piece” and “Audience Favorite” Prize in Eilat” [18]
+        li The 3rd Tbilisi International Piano competition (2005): Second Prize winner along with Special Prize “for Artistry” and Special Prize “Best Georgian young pianist”[19]
+        li A Borletti-Buitoni Trust Award in 2010[20]
+    hr 
+
+    //- Tour Dates
+    section#tour-dates.flex__wrapper
+      h3.section__title Tour Dates
+      p Tour Dates TBD
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    hr   
+    
+    //- Contact
+    section#contact.flex__wrapper
+      .flex__wrapper
+        h3.section__title Contact
+        form.form__contact
+          input(type='text' placeholder='First name' name='fname')
+          input(type='text' placeholder='Last name' name='lname')
+          input(type='email' placeholder='Email' name='email')
+          input(type='submit')  
+    hr
+
+    //- Footer
+    footer#footer.flex_wrapper
+      small Made by 
+        a.link(href='https://jamiegodel.com') Jamie Godel
+
+
+
+
+  script(type='text/javascript' src='js/main.js')
+  
+  script(type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js' )
+  script(type='text/javascript' src='https://code.jquery.com/jquery-migrate-1.2.1.min.js')
+
+
+
+
+
